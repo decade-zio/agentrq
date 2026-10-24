@@ -840,7 +840,9 @@
                   </div>
                   <div v-else class="space-y-4">
                     <p v-if="forkCount > 0" data-test="has-forks" class="text-[11px] text-gray-600 dark:text-zinc-400 font-medium px-1">
-                      This workspace has {{ forkCount === 1 ? '1 fork' : `${forkCount} forks` }}. Merge {{ forkCount === 1 ? 'it' : 'them' }} back before archiving or purging it.
+                      {{ forkCount === 1
+                        ? 'This workspace has 1 fork. Merge it back before archiving or purging it.'
+                        : `This workspace has ${forkCount} forks. Merge them back before archiving or purging it.` }}
                     </p>
                     <div class="p-6 border border-red-100 dark:border-red-900/30 bg-red-50/30 dark:bg-red-500/5 rounded-sm flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-sm">
                       <div class="flex-1">

@@ -27,6 +27,7 @@ import { createApp, watch } from 'vue'
 import { createWebHistory } from 'vue-router'
 
 import { createAgentRQApp } from '@app/app'
+import { startI18n } from '@app/i18n/translator'
 import { useThemeStore } from '@app/stores/themeStore'
 import { useToasts } from '@app/composables/useToasts'
 import ConnectionView from '@app/desktop/ConnectionView.vue'
@@ -59,6 +60,7 @@ if (connection.configured) {
   })
 
   app.mount('#app')
+  startI18n()
 
   // Transient update states are reported through the toast system. The one
   // state that is not transient — an update downloaded and waiting — raises
@@ -108,4 +110,5 @@ if (connection.configured) {
     // its own, before the application and its pinia exist.
     isMac: window.agentrq.platform === 'darwin',
   }).mount('#app')
+  startI18n()
 }

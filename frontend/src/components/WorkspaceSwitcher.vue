@@ -153,7 +153,7 @@ const isCurrent = (workspace) => isCurrentWorkspace(workspace, props.currentWork
               <span class="text-[9px] font-black uppercase tracking-widest text-gray-400 dark:text-zinc-500">↵ Switch</span>
             </span>
             <span v-if="hasWorkspaces" class="text-[9px] text-right text-gray-400 dark:text-zinc-500 truncate">
-              {{ workspaces.length }} workspace{{ workspaces.length === 1 ? '' : 's' }}
+              {{ workspaces.length === 1 ? '1 workspace' : `${workspaces.length} workspaces` }}
             </span>
           </div>
         </div>

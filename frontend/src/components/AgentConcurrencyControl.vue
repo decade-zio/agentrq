@@ -89,7 +89,7 @@
              the limit never interrupts a running task; the queue simply stops
              handing out new ones until the active count falls back under it. -->
         <p v-if="control.overLimit.value" class="text-[9px] font-medium text-amber-600 dark:text-amber-500 mt-2 leading-snug">
-          {{ control.active.value }} already running will finish first. Nothing new starts until the count drops below {{ control.value.value }}.
+          {{ `${control.active.value} already running will finish first. Nothing new starts until the count drops below ${control.value.value}.` }}
         </p>
 
         <!-- The one thing a person cannot discover from the control itself.

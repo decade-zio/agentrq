@@ -14,6 +14,7 @@
 import { createWebHistory } from 'vue-router'
 
 import { createAgentRQApp } from './app'
+import { startI18n } from './i18n/translator'
 import { reportRouteToExtensionPopup } from './utils/extensionPopup'
 
 const { app, router } = createAgentRQApp({
@@ -24,3 +25,7 @@ const { app, router } = createAgentRQApp({
 reportRouteToExtensionPopup(router)
 
 app.mount('#app')
+
+// The views are the English ones; this translates what they rendered and
+// keeps watching. `?lang=en` leaves a screen in its source language.
+startI18n()

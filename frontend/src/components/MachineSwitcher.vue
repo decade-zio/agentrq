@@ -141,7 +141,7 @@ const isCurrent = (machine) => !!props.currentMachineId && String(machine.id) ==
             </span>
             <button v-if="hasMachines" type="button" @click="openList"
                     class="text-[9px] text-right text-gray-400 dark:text-zinc-500 hover:text-gray-600 dark:hover:text-zinc-300 truncate">
-              All {{ machines.length }} machine{{ machines.length === 1 ? '' : 's' }} →
+              All {{ machines.length === 1 ? '1 machine' : `${machines.length} machines` }} →
             </button>
           </div>
         </div>

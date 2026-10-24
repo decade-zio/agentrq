@@ -1,0 +1,208 @@
+// Copyright 2026 Contextual, Inc. https://agentrq.com
+// This notice may not be modified or removed.
+// SPDX-License-Identifier: AGPL-3.0-only
+
+/**
+ * The desktop shell's own screens, the embedded side panel, extensions and
+ * their permission prompts, the window menu, and the pickers shared by both
+ * builds.
+ */
+export default {
+  // ── Desktop connection ─────────────────────────────────────────────────────
+  "Connect to your workspace server": "连接到你的工作区服务器",
+  "Point this at the AgentRQ server you run — on this machine, your network, or a hosted instance.":
+    "将其指向你运行的 AgentRQ 服务器——本机、你的网络或托管实例。",
+  "Desktop": "桌面版",
+  "Connecting...": "连接中...",
+  "Going back...": "正在返回...",
+
+  // ── Extensions ─────────────────────────────────────────────────────────────
+  "Install from folder": "从文件夹安装",
+  "Check GitHub": "检查 GitHub",
+  "Published by anyone on GitHub under the ": "由任何人在 GitHub 上以 ",
+  "Install only extensions you trust. Anyone can publish one, nothing here is reviewed, and an extension runs with full access to your computer — there is no sandbox.":
+    "只安装你信任的扩展。任何人都可以发布，这里的内容未经审核，扩展会以完整权限在你的电脑上运行——没有沙盒。",
+  "An extension here was granted all workspaces, and AgentRQ needs your authorisation before it can use account-wide tools on its behalf. A window will open on this server's own sign-in page.":
+    "此处的某个扩展已获得所有工作区访问权限，AgentRQ 需要你的授权才能代表它使用账号级工具。将打开一个窗口，显示此服务器自己的登录页面。",
+  "Authorise": "授权",
+  "AgentRQ is authorised to use account-wide tools.": "AgentRQ 已获授权使用账号级工具。",
+  "Give it back": "归还权限",
+  "Nothing installed, and nothing found yet.": "尚未安装任何扩展，也还没有找到。",
+  " to search, or ": " 进行搜索，或 ",
+  " to add one you have on this machine.": " 添加你本机已有的扩展。",
+  "linked folder": "链接的文件夹",
+  "Tool calls": "工具调用",
+  "View on GitHub": "在 GitHub 查看",
+  "updated ": "更新于 ",
+  "Not asked": "未被询问",
+  "May refuse": "可拒绝",
+  "May decide": "可决定",
+  "Version": "版本",
+  "Licence": "许可证",
+  "Workspace tools it may call": "可调用的工作区工具",
+  "Account tools it may call": "可调用的账号工具",
+  "Where it may be asked": "可被询问的位置",
+  "What it may reach": "可访问的范围",
+  "Answering permission prompts for you": "替你回答权限提示",
+  "When an agent asks permission to run something, this extension wants to be asked first. It only works while AgentRQ is open, so it is a convenience and never a guarantee — anything it does not answer still comes to you. You can change this later.":
+    "当智能体请求运行某物的权限时，此扩展希望先被询问。它仅在 AgentRQ 打开时工作，因此只是便利，绝非保证——它未回答的任何请求仍会交给你。你之后可以更改此设置。",
+  "— stored in your keychain, never shown again": "——保存在你的钥匙串中，不会再次显示",
+  "This workspace": "此工作区",
+  "From the ": "来自 ",
+  " extension.": " 扩展。",
+  "Nothing here. ": "这里没有内容。",
+  " may have been uninstalled, or no longer offers this page.": " 可能已卸载，或不再提供此页面。",
+  "This manifest could not be read.": "无法读取此清单。",
+  "Installed here": "已安装在此",
+  "Not running": "未运行",
+  "Running, contributing nothing": "正在运行，但未提供任何内容",
+  "No extensions found yet.": "还没有找到扩展。",
+  "Could not read the extension catalogue.": "无法读取扩展目录。",
+  "Could not refresh.": "无法刷新。",
+  "Could not refresh the extension catalogue.": "无法刷新扩展目录。",
+  "That folder could not be read.": "无法读取该文件夹。",
+  "That extension could not be installed.": "无法安装该扩展。",
+  "That did not work.": "操作未成功。",
+  "It may refuse a tool call, but never approve one": "它可以拒绝工具调用，但绝不会批准",
+  "It may approve or refuse a tool call without asking you": "它可以在不询问你的情况下批准或拒绝工具调用",
+  "It is not asked — every prompt still comes to you": "它不会被询问——每个提示仍会交给你",
+  "This extension runs with full access to your computer.": "此扩展以完整权限在你的电脑上运行。",
+  "This extension did not ask for access to all workspaces.": "此扩展未请求访问所有工作区。",
+  "Choose which workspaces this extension may reach.": "选择此扩展可以访问的工作区。",
+  "Choose what this extension may reach.": "选择此扩展可以访问的范围。",
+  "Choose at least one workspace.": "请至少选择一个工作区。",
+  "Selected workspaces": "已选择的工作区",
+  "All workspaces, including ones you create later": "所有工作区，包括你之后创建的",
+  "AgentRQ can now use account-wide tools.": "AgentRQ 现在可以使用账号级工具。",
+  "Account-wide access given back.": "已归还账号级访问权限。",
+
+  // ── Side panel and site permissions ────────────────────────────────────────
+  "Camera": "摄像头",
+  "use your camera": "使用你的摄像头",
+  "Microphone": "麦克风",
+  "use your microphone": "使用你的麦克风",
+  "Location": "位置",
+  "know your location": "获取你的位置",
+  "show notifications": "显示通知",
+  "MIDI devices": "MIDI 设备",
+  "use your MIDI devices": "使用你的 MIDI 设备",
+  "Screen sharing": "屏幕共享",
+  "see your screen": "查看你的屏幕",
+  "Clipboard": "剪贴板",
+  "read your clipboard": "读取你的剪贴板",
+  "Idle detection": "空闲检测",
+  "know when you are away": "知道你何时离开",
+  "Window management": "窗口管理",
+  "manage windows on your displays": "管理你显示器上的窗口",
+  "Fonts": "字体",
+  "use the fonts on this computer": "使用此电脑上的字体",
+  "Cookies on other sites": "其他站点的 Cookie",
+  "use its cookies on other sites": "在其他站点使用其 Cookie",
+  "Pointer lock": "指针锁定",
+  "hide and lock your pointer": "隐藏并锁定你的指针",
+  "Keyboard lock": "键盘锁定",
+  "capture your keyboard shortcuts": "捕获你的键盘快捷键",
+  "Speakers": "扬声器",
+  "choose your speakers": "选择你的扬声器",
+
+  // ── Window menu ────────────────────────────────────────────────────────────
+  "More": "更多",
+  "Zoom": "缩放",
+  "Zoom out": "缩小",
+  "Reset zoom": "重置缩放",
+  "Zoom in": "放大",
+  "Exit full screen": "退出全屏",
+  "Full screen": "全屏",
+  "Print…": "打印…",
+  "Check for updates…": "检查更新…",
+
+  // ── Keyboard shortcuts help ────────────────────────────────────────────────
+  "Find task by ID": "按 ID 查找任务",
+  "New task": "新建任务",
+  "Opens the task form for the workspace you are in": "为当前工作区打开任务表单",
+  "Search your workspaces by name and jump to one": "按名称搜索并跳转到某个工作区",
+  "Search your machines by name and open one": "按名称搜索并打开某台机器",
+  "Open the Pano": "打开 Pano",
+  "Show keyboard shortcuts": "显示键盘快捷键",
+  "Chat view": "聊天视图",
+  "The message thread": "消息线程",
+  "Trajectory view": "轨迹视图",
+
+  // ── Pickers and panels ─────────────────────────────────────────────────────
+  "Available agents": "可用的智能体",
+  "Reasoning effort": "推理强度",
+  "Resets to the gateway's own setting when it restarts.": "网关重启后会恢复为其自身设置。",
+  "Run one fewer at a time": "同时少运行一个",
+  "Run one more at a time": "同时多运行一个",
+  "What to run": "运行什么",
+  "Auto-compact": "自动压缩",
+  "Find task": "查找任务",
+  "Task ID, or any word in a title or description": "任务 ID，或标题/描述中的任意词",
+  "Task ID, or part of a recent title": "任务 ID，或最近标题的一部分",
+  "Loading recent tasks…": "加载最近任务中…",
+  "Looking that ID up across your workspaces…": "正在所有工作区中查找该 ID…",
+  "No task with that ID in any of your workspaces.": "你的任何工作区中都没有该 ID 的任务。",
+  "Not in the recent tasks. Press Enter to look this ID up across your workspaces.":
+    "不在最近任务中。按 Enter 在所有工作区中查找该 ID。",
+  "No match in the tasks saved on this device.": "本设备保存的任务中没有匹配项。",
+  "Diagram": "图表",
+  "Spin up": "启动",
+  "Pick a machine": "选择机器",
+  "Start an agent": "启动智能体",
+  "Runs in": "运行于",
+  "Runs in the workspace's folder": "运行于工作区文件夹",
+  "Task Latency": "任务延迟",
+  "Aggregate": "汇总",
+  "No closed tasks in this range": "此范围内没有已关闭任务",
+  "Install ": "安装 ",
+  " without a checksum. The ACP registry publishes none for it on this machine, so its download cannot be verified.":
+    "，且不校验校验和。ACP 注册表在这台机器上没有为它发布校验和，因此无法验证其下载内容。",
+  "What agents working here have written down for the next one. They read":
+    "在这里工作的智能体为下一个智能体写下的内容。它们会阅读",
+  "This is how every workspace starts. Agents write here themselves when they learn":
+    "每个工作区都从这里开始。智能体在学到内容时会自行写入",
+  "Failed": "失败",
+  "of": "/",
+  "done": "已完成",
+
+  // ── Agent launch ───────────────────────────────────────────────────────────
+  "Claude Code": "Claude Code",
+  "Reads the workspace over MCP. The daemon writes its config.": "通过 MCP 读取工作区。守护进程会写入其配置。",
+  "ACP Gateway": "ACP 网关",
+  "Bridges another agent into the workspace.": "将另一个智能体桥接进工作区。",
+  "Default": "默认",
+  "Extra high": "极高",
+  "No workspace selected.": "未选择工作区。",
+  "This workspace already has an agent connected.": "此工作区已经连接了一个智能体。",
+  "Set one in workspace settings": "在工作区设置中设置",
+  "Loading…": "加载中…",
+  "Pick what to run.": "选择要运行的内容。",
+  "Confirm installing this agent without a checksum.": "确认在不校验校验和的情况下安装此智能体。",
+
+  // ── Dictation and speech ───────────────────────────────────────────────────
+  "English": "英语",
+  "Microphone permission denied": "麦克风权限被拒绝",
+  "No microphone found on this device": "此设备上未找到麦克风",
+  "No speech detected": "未检测到语音",
+  "Dictation needs a network connection": "听写需要网络连接",
+  "Speech to Text": "语音转文字",
+  "Transcription failed": "转写失败",
+  "Worker error": "Worker 错误",
+  "Audio data is empty": "音频数据为空",
+  "Audio recording is empty": "录音为空",
+  "No audio captured": "未捕获音频",
+
+  // ── Daemon installer ───────────────────────────────────────────────────────
+  "Linux": "Linux",
+  "macOS": "macOS",
+  "Windows": "Windows",
+  "Copy the following code into your terminal to install.": "将以下代码复制到终端以安装。",
+  "Install it": "安装它",
+  "Enrol this machine": "注册此机器",
+
+  // ── Markdown copy ──────────────────────────────────────────────────────────
+  "Copy code": "复制代码",
+
+  // ── Pano task shortcut ─────────────────────────────────────────────────────
+  "Make a task in ": "创建任务到 ",
+}
